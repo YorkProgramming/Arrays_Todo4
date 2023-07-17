@@ -42,6 +42,24 @@ The function doesn't return anything since the shuffling is done directly on the
 //2.
 //Remove Range
 
-/* Given array, and indices start and end, remove vals in that index range, working in-place (hence shortening the array). 
+/* Given array, and indices start and end, remove vals in that index range, 
+working in-place (hence shortening the array). 
 Given ([20,30,40,50,60,70],2,4), change to [20,30,70] and return it. */
 
+function removeRange(arr, start, end) {
+    arr.splice(start, end - start + 1);
+    return arr;
+}
+
+// Example usage
+const myArray = [20, 30, 40, 50, 60, 70];
+removeRange(myArray, 2, 4);
+console.log(myArray); // Modified array
+
+/* myArray is modified by removing elements from index 2 to index 4 (inclusive) using the removeRange function. 
+The resulting modified array is then printed to the console.
+
+After the function call, myArray will be [20, 30, 70], as the elements 40, 50, 
+and 60 have been removed from the original array. */
+
+//################################################################################################################################
