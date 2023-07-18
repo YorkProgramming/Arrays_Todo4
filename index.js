@@ -63,3 +63,35 @@ After the function call, myArray will be [20, 30, 70], as the elements 40, 50,
 and 60 have been removed from the original array. */
 
 //################################################################################################################################
+
+//3.
+//Intermediate Sums
+
+/* You will be given an array of numbers. After every tenth element, 
+add an additional element containing the sum of those ten values. 
+If the array does not end aligned evenly with ten elements, 
+add one last sum that includes those last elements not yet been included in one of the earlier sums. 
+Given the array [1,2,1,2,1,2,1,2,1,2,1,2,1,2], change it to [1,2,1,2,1,2,1,2,1,2,15,1,2,1,2,6] */
+
+function intermediateSums(arr) {
+    let sum = 0;
+    const result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    if ((i + 1) % 10 === 0 || i === arr.length - 1) {
+        result.push(sum);
+        sum = 0;
+        }
+    }
+
+    return result;
+}
+
+// Example
+const myArray = [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2];
+const modifiedArray = intermediateSums(myArray);
+console.log(modifiedArray);
+
+
+//################################################################################################################################
