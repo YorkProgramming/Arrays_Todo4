@@ -93,5 +93,17 @@ const myArray = [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2];
 const modifiedArray = intermediateSums(myArray);
 console.log(modifiedArray);
 
+/* We start by defining the function intermediateSums that takes an array arr as a parameter.
+We initialize two variables: sum to keep track of the running sum of elements, 
+and result to store the modified array. 
+
+We use a for loop to iterate through each element in the array arr.
+In each iteration, we add the current element arr[i] to the running sum sum.
+Next, we check if the current index i + 1 is a multiple of 10 ((i + 1) % 10 === 0) 
+or if we have reached the last element in the array (i === arr.length - 1).
+If either of these conditions is true, 
+it means we have reached the end of a ten-element batch or the last element in the array. 
+In this case, we push the current value of sum to the result array, effectively storing the intermediate sum.
+After pushing the intermediate sum to the result array, we reset the sum back to 0 in preparation for the next ten-element batch.*/
 
 //################################################################################################################################
