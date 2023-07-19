@@ -107,3 +107,9 @@ In this case, we push the current value of sum to the result array, effectively 
 After pushing the intermediate sum to the result array, we reset the sum back to 0 in preparation for the next ten-element batch.*/
 
 //################################################################################################################################
+
+//4
+//Double Trouble
+
+/* Create a function that changes a given array to list each original element twice, 
+retaining original order. Convert [4,"Ulysses",42,false] to [4,4,"Ulysses","Ulysses",42,42,false,false]. */
