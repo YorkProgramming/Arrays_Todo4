@@ -128,3 +128,20 @@ function doubleTrouble(arr) {
 const myArray = [4, "Ulysses", 42, false];
 const modifiedArray = doubleTrouble(myArray);
 console.log(modifiedArray); // [4, 4, "Ulysses", "Ulysses", 42, 42, false, false]
+
+/* We start by defining the function doubleTrouble that takes an array arr as a parameter.
+We initialize an empty array result to store the modified array.
+
+We use a for loop to iterate through each element in the array arr.
+In each iteration, we push the current element arr[i] to the result array twice.*/
+
+//################################################################################################################################
+
+//5
+//Zip It
+
+/* Create a standalone function that accepts two arrays and combines their values sequentially into the first array,
+at alternating indices starting with the first array.
+Extra values from either array should be included afterward.
+Given [1,2] and [10,20,30,40], change first array to [1,10,2,20,30,40]. */
+
