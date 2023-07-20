@@ -145,3 +145,35 @@ at alternating indices starting with the first array.
 Extra values from either array should be included afterward.
 Given [1,2] and [10,20,30,40], change first array to [1,10,2,20,30,40]. */
 
+function zipIt(arr1, arr2) {
+    const result = [];
+
+    for (let i = 0; i < arr1.length || i < arr2.length; i++) {
+    if (i < arr1.length) {
+        result.push(arr1[i]);
+    }
+    if (i < arr2.length) {
+        result.push(arr2[i]);
+    }
+    }
+
+    return result;
+}
+
+// Example
+const myArray1 = [1, 2];
+const myArray2 = [10, 20, 30, 40];
+const modifiedArray = zipIt(myArray1, myArray2);
+console.log(modifiedArray); // [1, 10, 2, 20, 30, 40]
+
+/* We start by defining the function zipIt that takes two arrays arr1 and arr2 as parameters.
+We initialize an empty array result to store the modified array.
+
+We use a for loop to iterate through each element in the arrays arr1 and arr2.
+In each iteration, we check if the current index i is less than the length of arr1 (i < arr1.length).
+If it is, we push the current element arr1[i] to the result array.
+We then check if the current index i is less than the length of arr2 (i < arr2.length).
+If it is, we push the current element arr2[i] to the result array.
+Finally, we return the result array.*/
+
+//################################################################################################################################
